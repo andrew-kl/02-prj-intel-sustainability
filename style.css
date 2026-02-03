@@ -18,16 +18,14 @@ section {
   /* Включаем горизонтальную прокрутку */
   overflow-x: auto;
   
-  /* Отступы вокруг секции */
-  padding-left: 2rem;
-  padding-right: 2rem;
-  
   /* Margin для отступа всей секции (включая скроллбар) от краёв */
-  margin-left: 4rem;
-  margin-right: 4rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   
   /* Расстояние между карточками */
   gap: 20px;
+
+  scroll-snap-type: x mandatory;
 }
 
 /* Стили для каждой карточки */
@@ -52,6 +50,8 @@ section > div {
   
   /* Цвет фона */
   background-color: #f5f5f5;
+
+  scroll-snap-align: start;
 }
 
 /* Центрирование последнего параграфа */
