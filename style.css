@@ -89,8 +89,10 @@ section {
   overflow-x: auto;
   
   /* Margin для отступа всей секции (включая скроллбар) от краёв */
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin: 1rem 3.3rem;
+  
+  /* Отступ снизу для расстояния между карточками и скроллбаром */
+  padding-bottom: 20px;
   
   /* Расстояние между карточками */
   gap: 20px;
