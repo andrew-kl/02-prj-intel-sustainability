@@ -1,1 +1,58 @@
 /* Add your CSS here */
+
+/* Основные стили для body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Стили для секции с карточками таймлайна */
+section {
+  /* Flexbox для горизонтального размещения карточек */
+  display: flex;
+  
+  /* Запрещаем перенос карточек на новую строку */
+  flex-wrap: nowrap;
+  
+  /* Включаем горизонтальную прокрутку */
+  overflow-x: auto;
+  
+  /* Отступы вокруг секции */
+  padding: 20px;
+  
+  /* Расстояние между карточками */
+  gap: 20px;
+}
+
+/* Стили для каждой карточки */
+section > div {
+  /* Минимальная ширина карточки (не даёт ей сжиматься) */
+  min-width: 100px;
+  
+  /* Запрещаем карточке сжиматься */
+  flex-shrink: 1;
+  
+  /* Рамка вокруг карточки */
+  border: 2px solid #0071c5;
+  
+  /* Скругление углов */
+  border-radius: 10px;
+  
+  /* Внутренние отступы */
+  padding: 20px;
+  
+  /* Цвет фона */
+  background-color: #f5f5f5;
+}
+
+/* Центрирование последнего параграфа */
+body > p:last-child {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+img {
+  background-color: #0068b5;
+}
