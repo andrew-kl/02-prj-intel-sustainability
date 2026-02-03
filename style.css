@@ -7,6 +7,76 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* Стили для секции героя (header) */
+header {
+  /* Синий фоновый цвет Intel */
+  background-color: #0773c4;
+  
+  /* Цвет текста белый */
+  color: white;
+  
+  /* Внутренние отступы */
+  padding: 50px 20px;
+  
+  /* Центрирование текста */
+  text-align: center;
+}
+
+/* Контейнер внутри header */
+header > div {
+  /* Максимальная ширина контента */
+  max-width: 800px;
+  
+  /* Центрирование контейнера */
+  margin: 0 auto;
+}
+
+/* Логотип Intel в header */
+header img {
+  /* Ширина логотипа */
+  width: 120px;
+  
+  /* Высота подбирается автоматически */
+  height: auto;
+  
+  /* Белый фон для логотипа */
+  background-color: #055693;
+  
+  /* Внутренние отступы вокруг логотипа */
+  padding: 15px;
+  
+  /* Скругление углов */
+  border-radius: 8px;
+}
+
+/* Заголовок h1 в header */
+header h1 {
+  /* Размер шрифта */
+  font-size: 2.5rem;
+  
+  /* Отступы сверху и снизу */
+  margin: 20px 0;
+  
+  /* Жирность шрифта */
+  font-weight: bold;
+}
+
+/* Параграф в header */
+header p {
+  /* Размер шрифта */
+  font-size: 1.2rem;
+  
+  /* Высота строки для лучшей читаемости */
+  line-height: 1.6;
+  
+  /* Отступ сверху */
+  margin-top: 15px;
+  
+  /* Немного прозрачный белый цвет */
+  opacity: 0.95;
+}
+
+
 /* Стили для секции с карточками таймлайна */
 section {
   /* Flexbox для горизонтального размещения карточек */
@@ -59,8 +129,4 @@ body > p:last-child {
   text-align: center;
   padding: 20px;
   color: #666;
-}
-
-img {
-  background-color: #0068b5;
 }
