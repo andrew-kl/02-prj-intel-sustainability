@@ -19,7 +19,12 @@ section {
   overflow-x: auto;
   
   /* Отступы вокруг секции */
-  padding: 20px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
+  /* Margin для отступа всей секции (включая скроллбар) от краёв */
+  margin-left: 4rem;
+  margin-right: 4rem;
   
   /* Расстояние между карточками */
   gap: 20px;
@@ -28,10 +33,13 @@ section {
 /* Стили для каждой карточки */
 section > div {
   /* Минимальная ширина карточки (не даёт ей сжиматься) */
-  min-width: 100px;
+  min-width: 250px;
+  
+  /* Максимальная ширина карточки (текст будет переноситься внутри) */
+  max-width: 300px;
   
   /* Запрещаем карточке сжиматься */
-  flex-shrink: 1;
+  flex-shrink: 0;
   
   /* Рамка вокруг карточки */
   border: 2px solid #0071c5;
